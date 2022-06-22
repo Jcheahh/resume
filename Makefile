@@ -1,4 +1,4 @@
-filename = jeff.pdf
+filename = jack.pdf
 local-generate:
 	stack main.hs | wkhtmltopdf --dpi 350 - $(filename)
 
