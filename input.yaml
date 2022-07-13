@@ -25,11 +25,11 @@ sections:
   - name: Project
     children:
       - header:
-          title: <a href="https://github.com/jcheahh/TodoList">TodoList</a>
+          title: <a href="https://github.com/Jcheahh/TodoList-old">TodoList</a>
           subtitle: Web based to-do list
         body:
           - It is a simple todo list with features like adding new items to the list, marking item as completed and deleting items. It also includes authentication feature where user can sign up, login and create their own todos.
-          - It is a server-client architecture web app written using Ruby on Rails for backend and React.js for frontend.
+          - It is a server-client architecture web app written using Ruby on Rails for <a href="https://github.com/Jcheahh/todo-backend">backend</a> and React.js for <a href="https://github.com/Jcheahh/TodoList-old">frontend</a>.
           - It also includes model tests and request tests.
       - header:
           title: <a href="https://github.com/Jcheahh/online-menu">Online Menu</a>
