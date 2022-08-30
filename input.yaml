@@ -28,16 +28,23 @@ sections:
           title: <a href="https://github.com/Jcheahh/TodoList-old">TodoList</a>
           subtitle: Web based to-do list
         body:
-          - It is a simple todo list with features like adding new items to the list, marking item as completed and deleting items. It also includes authentication feature where user can sign up, login and create their own todos.
-          - It is a server-client architecture web app written using Ruby on Rails for <a href="https://github.com/Jcheahh/todo-backend">backend</a> and React.js for <a href="https://github.com/Jcheahh/TodoList-old">frontend</a>.
+          - It is a simple todo-list with features like adding new items to the list, marking item as completed and deleting items. It also includes user authentication feature and it allows users to create account which they can login to create their personal to-do list. (where user can sign up, login and create their own todos.)
+          - It is a server-client architecture application web app written using Ruby on Rails for the <a href="https://github.com/Jcheahh/todo-backend">backend</a> and React.js for the <a href="https://github.com/Jcheahh/TodoList-old">frontend</a>.
           - It also includes model tests and request tests.
       - header:
           title: <a href="https://github.com/Jcheahh/online-menu">Online Menu</a>
           subtitle: Online food delivery platform.
         body:
           - It is a clone of an online food delivery platform <a href="https://canton2go.oddle.me/en_MY/">https://canton2go.oddle.me/en_MY/</a> with only the frontend part.
-          - It includes basic features like adding items to cart, modifying the amount and removing them from cart.
+          - It includes basic features like adding items to cart, changing the amount of purchase and removing them from cart.
           - It is written in React and Typescript.
+      - header:
+          title: <a href="https://github.com/Jcheahh/tic-tac-toe-frontend">Tic Tac Toe</a>
+          subtitle: Web based tic-tac-toe game.
+        body:
+          - It is a normal tic-tac-toe game.
+          - It is written using Java Spring Boot for the <a href="https://github.com/Jcheahh/tic-tac-toe-backend">backend</a> and Angular.ts for the <a href="https://github.com/Jcheahh/tic-tac-toe-frontend">frontend</a>.
+          - It deployed on Heroku and this is the link <a href="https://tranquil-headland-78038.herokuapp.com">https://tranquil-headland-78038.herokuapp.com</a>.
   - name: Skills
     children:
       - header:
@@ -52,9 +59,9 @@ sections:
       - header:
           title: Database
           subtitle: Experienced with MySQL & PostgreSQL and SQLite
-  - name: Miscellaneous
-    children:
-      - body:
-          - I am a native Chinese speaker and I also speak English.
-          - My favorite sports are playing badminton and swimming.
-          - I like to watch movie when I am free.
+  # - name: Miscellaneous
+  #   children:
+  #     - body:
+  #         - I am a native Chinese speaker and I also speak English.
+  #         - My favorite sports are playing badminton and swimming.
+  #         - I like to watch movie when I am free.
