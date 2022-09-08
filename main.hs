@@ -7,54 +7,51 @@
     --package time
     --package yaml
 -}
+
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE DuplicateRecordFields #-}
-{-# LANGUAGE OverloadedStrings     #-}
-{-# LANGUAGE QuasiQuotes     #-}
-{-# LANGUAGE RecordWildCards     #-}
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE QuasiQuotes #-}
+{-# LANGUAGE RecordWildCards #-}
 
-import           Data.Time.Clock
-import           Data.Time.Format
-import           Data.Yaml (FromJSON (..))
+import Data.Time.Clock
+import Data.Time.Format
+import Data.Yaml (FromJSON (..))
 import qualified Data.Yaml as Y
-import           GHC.Generics (Generic)
-import           Text.Blaze.Html
-import           Text.Blaze.Html.Renderer.Pretty
-import           Text.Hamlet
+import GHC.Generics (Generic)
+import Text.Blaze.Html
+import Text.Blaze.Html.Renderer.Pretty
+import Text.Hamlet
 
-data SectionHeader =
-  SectionHeader
-    { title          :: String
-    , subtitle       :: String
-    , extraHeader    :: Maybe String
-    , extraSubheader :: Maybe String
-    }
+data SectionHeader = SectionHeader
+  { title :: String
+  , subtitle :: String
+  , extraHeader :: Maybe String
+  , extraSubheader :: Maybe String
+  }
   deriving (Show, Generic)
 
-newtype SectionBody =
-  SectionBody [String]
+newtype SectionBody
+  = SectionBody [String]
   deriving (Show, Generic)
 
-data SectionItem =
-  SectionItem
-    { header :: Maybe SectionHeader
-    , body   :: Maybe SectionBody
-    }
+data SectionItem = SectionItem
+  { header :: Maybe SectionHeader
+  , body :: Maybe SectionBody
+  }
   deriving (Show, Generic)
 
-data Section =
-  Section
-    { name     :: String
-    , children :: [SectionItem]
-    }
+data Section = Section
+  { name :: String
+  , children :: [SectionItem]
+  }
   deriving (Show, Generic)
 
-data Resume =
-  Resume
-    { name    :: String
-    , contact :: [String]
-    , sections :: [Section]
-    }
+data Resume = Resume
+  { name :: String
+  , contact :: [String]
+  , sections :: [Section]
+  }
   deriving (Show, Generic)
 
 instance FromJSON SectionHeader
@@ -64,7 +61,8 @@ instance FromJSON Section
 instance FromJSON Resume
 
 sectionTemplate :: Section -> Html
-sectionTemplate (Section {..}) = [shamlet|
+sectionTemplate (Section{..}) =
+  [shamlet|
 <section>
   <h2>#{name}
   $forall (SectionItem header body) <- children
@@ -88,11 +86,12 @@ sectionTemplate (Section {..}) = [shamlet|
 |]
 
 template :: String -> Resume -> String -> Html
-template css (Resume {..}) d = [shamlet|
+template css (Resume{..}) d =
+  [shamlet|
 $doctype 5
 <html>
   <head>
-    <title>Cheah Jer Fei
+    <title>Cheah Jer Liang
     <meta charset="utf-8">
     <style>#{preEscapedToHtml css}
 
@@ -125,5 +124,5 @@ main = do
   css <- readFile cssFile
   config <- Y.decodeFileThrow inputFile
   d <- date
-  
+
   putStrLn $ renderHtml $ template css config d
