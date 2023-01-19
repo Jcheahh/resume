@@ -42,9 +42,9 @@ sections:
           title: <a href="https://github.com/Jcheahh/tic-tac-toe-frontend">Tic Tac Toe</a>
           subtitle: Web based tic-tac-toe game.
         body:
-          # - It is a normal tic-tac-toe game.
           - Written using Java Spring Boot for the <a href="https://github.com/Jcheahh/tic-tac-toe-backend">backend</a> and Angular.ts for the <a href="https://github.com/Jcheahh/tic-tac-toe-frontend">frontend</a>.
-          - Deployed on Heroku and this is the link <a href="https://tranquil-headland-78038.herokuapp.com">https://tranquil-headland-78038.herokuapp.com</a>.
+          - It is a normal tic-tac-toe game.
+          # - Deployed on Heroku and this is the link <a href="https://tranquil-headland-78038.herokuapp.com">https://tranquil-headland-78038.herokuapp.com</a>.
   - name: Skills
     children:
       - header:
