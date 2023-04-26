@@ -15,20 +15,39 @@ sections:
   - name: Experience
     children:
       - header:
+          title: SmartRetail
+          subtitle: Junior Developer - Infrastructure
+          extraHeader: Petaling Jaya, Selangor
+          extraSubheader: December 2022 – March 2023
+        body:
+          - Developed software tools to monitor and manage vending machines across multiple countries, resulting in increased efficiency, reduced downtime, and improved decision-making through actionable reports.
+          - Collaborated with cross-functional teams to develop and implement innovative solutions that addressed business needs, leveraging adaptability to new technologies and programming languages for enhanced competitiveness.
+          - Proposed and implemented cost-effective solutions that reduced costs, improved performance, and maintained professionalism while adhering to the company's values and policies.
+          # - Building tools to manage server(every Vending Machine)
+          # - Using a tool called Chef to manage all the Vending Machine (example:deploying changes, upgrading system, monitor vending machine's status, error handling)
+
+          # - Developed tools to monitor and manage vending machines, increasing efficiency and reducing downtime.
+          # - Collaborated on innovative solutions to address business needs, leveraging adaptability to new technologies.
+          # - Proposed cost-effective solutions to reduce costs, improve performance, and maintain professionalism.
+
+      - header:
           title: Chin Hin Group
           subtitle: Software Engineer
           extraHeader: Kuala Lumpur, Malaysia
           extraSubheader: June 2021 – Oct 2021
         body:
-          - Built a platform in Odoo (Odoo is a suite of open source business apps that cover all your company needs:CRM, eCommerce, accounting, inventory, point of sale, project management, etc.) for client (company's subcompany) to convenient their jobs.
-          - Built a platform (included Quotation, Survey, Invoicing and etc.) using Python (Odoo).
+          - Developed a platform in Odoo for a client's subcompany, streamlining their job processes and increasing efficiency.
+          - Designed and implemented a comprehensive platform using Python (Odoo) for managing quotations, surveys, invoicing, and other business processes.
+          # - Built a platform in Odoo for client (company's subcompany) to convenient their jobs.
+          # - Built a platform (included Quotation, Survey, Invoicing and etc.) using Python (Odoo).
   - name: Project
     children:
       - header:
           title: <a href="https://github.com/Jcheahh/TodoList-old">TodoList</a>
           subtitle: Web based to-do list
         body:
-          - Simple todo-list with features like adding new items to the list, marking item as completed and deleting items. It also includes user authentication feature and it allows users to create account which they can login to create their personal to-do list. (where user can sign up, login and create their own todos.)
+          - Developed a simple to-do list web application with user authentication features using Ruby on Rails for the backend and React.js for the frontend. Implemented server-client architecture to allow users to sign up, log in, and create their own personal to-do lists.
+          # - Simple todo-list with features like adding new items to the list, marking item as completed and deleting items. It also includes user authentication feature and it allows users to create account which they can login to create their personal to-do list. (where user can sign up, login and create their own todos.)
           - Server-client architecture application web app written using Ruby on Rails for the <a href="https://github.com/Jcheahh/todo-backend">backend</a> and React.js for the <a href="https://github.com/Jcheahh/TodoList-old">frontend</a>.
           - Includes model tests and request tests.
       - header:
@@ -36,7 +55,8 @@ sections:
           subtitle: Online food delivery platform.
         body:
           - Clone of an online food delivery platform <a href="https://canton2go.oddle.me/en_MY/">https://canton2go.oddle.me/en_MY/</a> with only the frontend part.
-          - Includes basic features like adding items to cart, changing the amount of purchase and removing them from cart.
+          - Implemented features for adding items to cart, changing purchase amounts, and removing items from cart.
+          # - Includes basic features like adding items to cart, changing the amount of purchase and removing them from cart.
           - Written in React and Typescript.
       - header:
           title: <a href="https://github.com/Jcheahh/tic-tac-toe-frontend">Tic Tac Toe</a>
@@ -48,17 +68,15 @@ sections:
   - name: Skills
     children:
       - header:
-          title: Backend
-          subtitle: Experienced with Ruby on Rails
-      - header:
-          title: Frontend
-          subtitle: Experienced with HTML, CSS, JavaScript, React JS
-      - header:
           title: Programming Languages
-          subtitle: Experienced with Ruby, Java, Python, Haskell
+          subtitle: Java, Python, Ruby, JavaScript, Python, Ruby on Rails, Haskell
       - header:
-          title: Database
-          subtitle: Experienced with MySQL & PostgreSQL and SQLite
+          title: Web
+          subtitle: HTML, CSS, JavaScript, React, MySQL, PostgreSQL, SQLite, NodeJS
+      - header:
+          title: DevOps
+          subtitle: AWS services like EC2, S3 etc
+
   # - name: Miscellaneous
   #   children:
   #     - body:
